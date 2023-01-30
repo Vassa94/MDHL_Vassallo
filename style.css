@@ -40,12 +40,12 @@ nav a {
 }
 
 .banner-img {
+    background-image: url("/asset/img/design1_image1.jpg");
     width: 100%;
     height: auto;
     max-height: 340px;
-    overflow: hidden;
-    object-fit: cover;
-    object-position: center 35%;
+    background-size: cover;
+    background-position: center;
 
 }
 
@@ -82,7 +82,7 @@ a[href="#"] {
 }
 
 nav {
-    position: absolute;    
+    position: absolute;
 }
 
 aside {

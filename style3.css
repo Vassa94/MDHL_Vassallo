@@ -54,6 +54,7 @@ nav a {
 }
 
 .banner-img {
+    background-image: url("/asset/img/design1_image2.jpg");
     width: 100%;
     height: auto;
     max-height: 340px;
