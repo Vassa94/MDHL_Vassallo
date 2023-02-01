@@ -155,6 +155,27 @@ tr:hover {
     background-color: var(--color1);
 }
 
+.snoopy {
+    z-index: 3;
+    position: absolute;
+    right: 260px;
+    bottom: 640px;
+    animation: move 5s ease-in-out infinite;
+}
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(300px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
 :root {
     --color1: #C4D6B0;
     --color2: #477998;
