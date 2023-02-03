@@ -30,7 +30,7 @@ header {
 
 h1 {
 
-    font-size: 4em;
+    font-size: 400%;
     color: var(--color4);
     filter: drop-shadow(4px 4px 4px var(--color5));
     text-shadow:
@@ -108,7 +108,7 @@ a {
     height: 50px;
 }
 
-nav{
+nav {
     display: inline-block;
     font-size: 30px;
 
@@ -127,7 +127,7 @@ aside {
     border-radius: 20px;
     background-color: #c4d6b07e;
     box-shadow: 4px 4px 10px var(--color5);
-    font-size: 30px
+    font-size: 30px;
 }
 
 .photo {
@@ -147,6 +147,14 @@ th,
 td {
     border: 3px solid var(--color4);
     border-collapse: collapse;
+}
+
+table {
+    background-image: url("/asset/img/player.png");
+    background-position: -8% 155%;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-size: 30%;
 }
 
 th,
@@ -169,10 +177,11 @@ tr:nth-child(even) {
 .snoopy {
     z-index: 3;
     position: absolute;
-    right: 400px;
-    bottom: -200px;
+    right: 20%;
+    bottom: 35%;
     animation: move 2.5s ease-in-out alternate infinite;
 }
+
 
 @keyframes move {
     0% {
@@ -184,10 +193,15 @@ tr:nth-child(even) {
     }
 }
 
+.player:hover {
+    transform: scale(1.1);
+    transition: 2s;
+}
+
 .video {
     margin: 40px 0 40px 20px;
-    border:0px;
-    
+    border: 0px;
+
     border-radius: 20px;
     box-shadow: 4px 4px 10px var(--color5);
 }
@@ -233,8 +247,6 @@ caption {
 li {
     margin: 15px 0
 }
-
-
 
 .footer {
     margin-top: 20px;
