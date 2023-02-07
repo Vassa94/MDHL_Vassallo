@@ -20,17 +20,15 @@ body::-webkit-scrollbar-thumb {
 
 body {
     background-color: var(--color3);
+    width: 100vw;
+    height: 100vh;
     ;
 }
 
-header {
-    position: relative;
-    z-index: 1;
-}
-
 h1 {
-
-    font-size: 400%;
+    width: 10   0%;
+    font-size: 4vw ;
+    text-align: center;
     color: var(--color4);
     filter: drop-shadow(4px 4px 4px var(--color5));
     text-shadow:
@@ -41,12 +39,12 @@ h1 {
     padding: 20px;
     border-radius: 20px;
     background-color: #ffffff50;
-    transition: 2s;
+    
 }
 
 h1:hover {
     transform: scale(1.25) translate(1px, -1px);
-
+    transition: 2s;
 }
 
 nav>a {
@@ -76,42 +74,47 @@ a {
     filter: drop-shadow(1px 1px 1px var(--color5));
 }
 
+header {
+    display:flex;
+    justify-content: flex-start;
+}
+
 .banner-img {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background-image: url("/asset/img/design1_image2.jpg");
     width: 100%;
-    height: 340px;
-    max-height: 340px;
     object-fit: cover;
     object-position: center 35%;
 
 }
 
-
 .logo {
-    position: absolute;
-    z-index: 2;
-    top: 70px;
-    left: 10px;
+    width: 15vw;
     filter: drop-shadow(4px 4px 4px var(--color5))
 }
+
+
 
 .title {
     padding: 2px;
     background-color: black;
     color: var(--color2);
     text-align: center;
-    font-size: 2em;
+    
     width: auto;
-    height: 50px;
+    
 }
 
 nav {
     display: inline-block;
     font-size: 30px;
 
+}
+
+.miniNav {
+    display: none;
 }
 
 a[href="#"] {
@@ -121,7 +124,7 @@ a[href="#"] {
 
 aside {
     align-self: flex-start;
-    margin: 40px 0 40px 20px;
+    margin: 40px 20px 20px 20px;
     width: 1100px;
     padding: 20px;
     border-radius: 20px;
@@ -131,12 +134,16 @@ aside {
 }
 
 .photo {
-    margin: 40px 0 40px 60px;
+    margin: 40px 10px 10px 10px;
     width: 500px;
     border-radius: 20px;
     box-shadow: 4px 4px 10px var(--color5);
     transition: transform 1s ease-in-out;
 }
+
+/* .pics {
+    margin: 10% 10% 10% 10%;
+} */
 
 .photo:hover {
     transform: perspective(500px) rotatey(-20deg);
@@ -144,8 +151,7 @@ aside {
 
 table,
 th,
-td {
-    border: 3px solid var(--color4);
+td {    
     border-collapse: collapse;
 }
 
@@ -174,12 +180,15 @@ tr:nth-child(even) {
     background-color: var(--color4);
 }
 
+.snoopy-box {
+    display: flex;     
+    
+}
+
 .snoopy {
-    z-index: 3;
-    position: absolute;
-    right: 20%;
-    bottom: 35%;
-    animation: move 2.5s ease-in-out alternate infinite;
+    width: auto;
+    margin:20px;
+    animation: move 5s ease-in-out alternate infinite;
 }
 
 
@@ -189,7 +198,7 @@ tr:nth-child(even) {
     }
 
     100% {
-        transform: translateX(300px);
+        transform: translateX(80vw);
     }
 }
 
@@ -219,8 +228,9 @@ h6 {
 }
 
 .content2 {
+    width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -246,6 +256,30 @@ caption {
 
 li {
     margin: 15px 0
+}
+
+@media screen and (max-width: 663px) {
+    nav{
+        display: none;
+    }
+    
+    .miniNav {
+        display: flex;
+        justify-content: center;        
+    }
+}
+
+
+.miniNav>select {
+    height: 40px;
+    width: 100%;
+    background-color: var(--color3);
+    text-align: center;
+    font-size: 30px;
+}
+
+option {
+    font-size: 30px;
 }
 
 .footer {

@@ -11,18 +11,18 @@
 </head>
 
 <body>
-    <header>
-        <div class="banner-img">
-            <h1>Mighty Ducks Hockey League</h1>
-        </div>
-        <figure class="logo">
+    <header class="banner-img">
+        <figure>
             <a href="#">
-                <img src="/asset/img/Logo_Mighty_ducks-01.png" alt="Logo_Mighty_ducks-01" width="240">
+                <img src="/asset/img/Logo_Mighty_ducks-01.png" alt="Logo_Mighty_ducks-01" class="logo">
             </a>
         </figure>
+        <div >
+            <h1>Mighty Ducks Hockey League</h1>
+        </div>
     </header>
     <main>
-        <section>
+        <section >
             <h3 class="title">Upcoming Events</h3>
             <nav>
                 <a href="#">Home</a>
@@ -30,6 +30,16 @@
                 <a href="/rules.html">Rules</a>
                 <a href="/game_info.html">Game Info</a>
                 <a href="/contact.html">Contact</a>
+            </nav>
+            <nav class="miniNav">
+                <select name="Nav" id="MiniNav">
+                    <option value=""><a href="#">Home</a></option>
+                    <option value=""><a href="/about.html">About</a></option>
+                    <option value=""><a href="/rules.html">Rules</a></option>
+                    <option value=""><a href="/game_info.html">Game Info</a></option>
+                    <option value=""><a href="/contact.html">Contact</a></option>
+                    <option value=""></option>
+                </select>
             </nav>
             <div class="content2">
                 <aside>
@@ -46,7 +56,7 @@
                         <p>First Game of the Season (Check Game Schedule for details)</p>
                     </article>
                 </aside>
-                <figure>
+                <figure class="pics">
                     <img src="asset/img/hockey_1.jpg" alt="hockey_1" class="photo">
                 </figure>
             </div>
