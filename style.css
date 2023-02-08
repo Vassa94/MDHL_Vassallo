@@ -26,7 +26,7 @@ body {
 }
 
 h1 {
-    width: 100%;   
+    width: 100%;
     text-align: center;
     color: var(--color4);
     filter: drop-shadow(4px 4px 4px var(--color5));
@@ -73,7 +73,7 @@ a {
 }
 
 header {
-    display:flex;
+    display: flex;
     justify-content: flex-start;
 }
 
@@ -101,7 +101,7 @@ header {
     text-align: center;
     width: auto;
     font-size: 1.5rem;
-    
+
 }
 
 nav {
@@ -153,7 +153,7 @@ aside {
 
 table,
 th,
-td {    
+td {
     border-collapse: collapse;
 }
 
@@ -183,13 +183,13 @@ tr:nth-child(even) {
 }
 
 .snoopy-box {
-    display: flex;     
-    
+    display: flex;
+
 }
 
 .snoopy {
     width: auto;
-    margin:20px;
+    margin: 20px;
     animation: move 5s ease-in-out alternate infinite;
 }
 
@@ -282,14 +282,17 @@ option {
     justify-content: space-between;
 }
 
-form{
-    margin-top: 40px;
+form {
+    display: flex;
+    flex-direction: column;
+
+    margin: 40px;
     width: 80%;
-    font-size: 1.7rem; 
+    font-size: 1.7rem;
     padding: 20px;
     border-radius: 20px;
     background-color: #c4d6b07e;
-    box-shadow: 4px 4px 10px var(--color5);   
+    box-shadow: 4px 4px 10px var(--color5);
 }
 
 form>h3 {
@@ -298,19 +301,21 @@ form>h3 {
 
 form input {
     background-color: var(--color1);
-    
+
 }
 
-label>input[type="text"]{
+label>input[type="text"] {
     width: 30%;
 }
-label>input[name="address"]{
+
+label>input[name="address"] {
     width: 79%;
 }
 
 .personalInfo {
     flex-direction: column;
 }
+
 .personalInfo div {
     flex-direction: row;
     display: block;
@@ -318,13 +323,13 @@ label>input[name="address"]{
     margin-bottom: 15px;
 }
 
-.school{
+.school {
     width: 60%;
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
-    
-    
+
+
 }
 
 fieldset div {
@@ -337,10 +342,10 @@ fieldset div {
     width: 100%;
 }
 
-fieldset{
-    display: flex;    
+fieldset {
+    display: flex;
     padding: 20px;
-    border-radius: 20px;   
+    border-radius: 20px;
     border: 0;
 }
 
@@ -352,23 +357,67 @@ fieldset{
 }
 
 .permision {
-    width: 100%;flex-direction: column;
+    width: 100%;
+    flex-direction: column;
     gap: 10px;
 }
 
+button {
+    scale: 2;
+    width: 40px;
+    align-self: center;
+    border-radius: 20px;
+    border: 0;
+    background-color: var(--color1);
+    box-shadow: 1px 1px 2px var(--color5);
 
+}
+
+.map {
+    height: 450px;
+    width: 600px;
+    border: 0;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: #c4d6b07e;
+    box-shadow: 4px 4px 10px var(--color5);
+}
 
 
 @media screen and (max-width: 663px) {
-    nav{
+    nav {
         display: none;
     }
-    
+
     .miniNav {
         display: flex;
-        justify-content: center;        
+        justify-content: center;
     }
 }
+
+@media screen and (max-width:768px) {
+    .personalInfo div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    label>input[type="text"] {
+        width: auto;
+    }
+
+    label>input[name="address"] {
+        width: auto;
+    }
+
+    .position {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
 
 :root {
     --color1: #C4D6B0;
